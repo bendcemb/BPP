@@ -1,0 +1,19 @@
+﻿.edit-button {
+    background-image: url('img/icons/pencil-square.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px; /* ซ่อนข้อความในปุ่ม */
+    width:32px;
+    height:32px;
+   
+}
+
+.hazard-button {
+    background-image: url('img/icons/radioactive.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px; /* ซ่อนข้อความในปุ่ม */
+    width: 32px;
+    height: 32px;
+}
+

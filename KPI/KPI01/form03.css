@@ -1,0 +1,160 @@
+﻿.top {
+    display: flex;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเบลอ */
+    background-color: #f6f6f6;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 5px 5px 15px;
+    align-items: center;
+}
+
+    .top .menu button {
+        width: 5rem;
+        height: 3rem;
+        margin: 15px 4px 5px 4px;
+        border-radius: 15px 15px;
+        /*border-style:none;*/
+    }
+
+.menu {
+    margin-left: 40px;
+}
+
+.open-close button {
+    border-radius: 25px 25px;
+    border-block-color: aliceblue;
+    border-color: #ffffff;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 10px;
+}
+
+section.mid {
+    display: flex;
+    /*height: calc(100% - 80px);*/
+}
+
+.mid-left, .mid-mid {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเบลอ */
+    background-color: #f6f6f6;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 5px 5px 15px;
+    height: 70vh;
+    box-sizing: border-box;
+    transition: all 0.5s ease; /* Add transition effect */
+}
+
+.mid-left {
+    flex: 2;
+    display: block;
+}
+
+.mid-mid {
+    flex: 10;
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+}
+
+
+.right {
+    flex: 0 1 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเบลอ */
+    background-color: #f6f6f6;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 5px 5px 15px;
+    height: 70vh;
+    box-sizing: border-box;
+}
+
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        /*bottom: 125%;*/ /* Position above the button */
+        top: 125%;
+        left: 50%;
+        margin-left: -60px; /* Center the tooltip */
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+        /* Tooltip arrow */
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            /*top: 100%;*/ /* Bottom of the tooltip */
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+    /* Show the tooltip text when hovering */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-box {
+    width: 300px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+    .text-box:focus {
+        border-color: #007BFF;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    }
+
+    .text-box::placeholder {
+        color: #aaa;
+    }
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+
+

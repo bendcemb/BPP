@@ -1,0 +1,149 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 20px;
+}
+
+.top-menu {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    display: block; /* หรือ block ถ้าต้องการเต็มความกว้าง */
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+    .top-menu div {
+        margin-bottom: 10px;
+    }
+
+    .top-menu button{
+        width:5rem;
+        height:4rem;
+    }
+
+.detail {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 2px 3px 15px 5px rgba(0, 0, 0, 0.2);
+    min-height: 600px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* Optional: styling for button inside left-menu */
+.left-menu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #333; /* สีตัวอักษร */
+}
+
+/* CSS for left-menu */
+.left-menu {
+    flex-basis: 15%;
+    transition: flex-basis 0.5s ease; /* เพื่อให้มีการเปลี่ยนขนาด left-menu อย่างนี้ */
+    overflow: hidden; /* ไม่ให้เนื้อหาภายใน left-menu เกินขอบเขต */
+    border-radius: 10px 10px 10px 10px;
+    background-color: #fff;
+    box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.2);
+    padding-left: 0.3em;
+    margin: 4px 4px 4px 4px;
+}
+
+
+
+.right-detail {
+    flex-basis: 20%;
+    overflow: hidden; /* ไม่ให้เนื้อหาภายใน left-menu เกินขอบเขต */
+    margin: 4px 4px 4px 4px;
+    box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.2);
+    padding-left: 0.3em;
+}
+
+.smenu {
+    display: none;
+}
+
+/* CSS for mid-detail and right-detail */
+.mid-detail {
+    flex: 1; /* ให้ mid-detail และ right-detail ขยายตามพื้นที่ที่เหลือ */
+    color: aqua;
+    box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.2);
+    padding-left: 0.3em;
+    margin: 4px 4px 4px 4px;
+}
+
+
+
+.foot {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    height: 200px;
+   
+    box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    margin: 5px;
+    /*padding: 5px;*/
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+}
+
+
+
+
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 125%; /* Position the tooltip to the right of the icon */
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .tooltip-text::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%; /* Position the arrow to the left of the tooltip */
+        transform: translateY(-50%);
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent #555 transparent transparent;
+    }
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}

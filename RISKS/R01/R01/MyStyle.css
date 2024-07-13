@@ -1,0 +1,96 @@
+﻿/*pagerstyle*/
+.custom-pager {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    .custom-pager a {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0 5px;
+        border: 1px solid #808080; /* สีน้ำเงิน */
+        background-color: #ffffff; /* สีของพื้นหลัง */
+        color: #0000ff; /* สีของข้อความ */
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .custom-pager a:hover {
+            background-color: #0846a8; /* เปลี่ยนสีเมื่อ Hover */
+            color: #ffffff; /* เปลี่ยนสีข้อความเมื่อ Hover */
+        }
+
+    .custom-pager .selected-page {
+        font-weight: bold;
+        border: 2px solid #0000ff; /* สีน้ำเงิน */
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #ffffff; /* สีของพื้นหลัง */
+        color: #0000ff; /* สีของข้อความ */
+        display: inline-block; /* ให้มีขนาดเท่ากับเนื้อที่ของตัวเลขเท่านั้น */
+    }
+
+    .custom-pager span {
+        border: 2px solid #0000ff; /* สีน้ำเงิน */
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #5c5cfa; /* สีของพื้นหลัง */
+        color: #ffffff; /* สีของข้อความ */
+        display: inline-block;
+    }
+
+/*pagerstyle*/
+
+/*...................................................*/
+
+/*menu tab*/
+/* Style the tab menu buttons */
+/*.tab-menu {
+    overflow: hidden;
+}*/
+
+.tab-menu button {
+    background-color: #f2f2f2;
+    border: none;
+    border-top-right-radius:20px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+    .tab-menu button:hover {
+        background-color: #ddd;
+    }
+   
+
+/* Hide the tab content by default */
+.tabcontent {
+    display: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 20px;
+    /*border: 1px solid #ccc;   */
+    
+}
+
+    /* สีพื้นหลังของแท็บที่ถูกเลือก */
+    .tabcontent.active {
+        background-color: slategray;
+    }
+
+/* สีพื้นหลังของแท็บเมนู */
+.tab-menu {
+    color: white; /* กำหนดสีข้อความ */
+}
+
+    /* สีพื้นหลังของแท็บที่ถูกเลือก */
+    .tab-menu .tablinks.active {
+        background-color: slategray; /* กำหนดสีพื้นหลัง */
+        color: white; /* กำหนดสีข้อความ */
+    }
+
+
+/*menu tab*/
